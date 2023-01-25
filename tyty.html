@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+$("button").click(function(){  
+var $x = $("div");  
+$x.prop("color","red");  
+$x.append("The value of the color property: " + $x.prop("color"));  
+$x.prop("color","yellow");  
+$x.append("<br>Now the value of the color property: " + $x.prop("color"));  
+});  
+}); 
+
+$(document).ready(function(){
+	$("#hide").click(function(){
+    	$("p").hide();
+	});
+	$("#show").click(function(){
+    	$("p").show();
+	});
+});
+
+</script>  
+</head>  
+<body>  
+<button>Add and remove a property</button><br><br>  
+<div></div>  
+
+<p>Click on the "Hide" button and I will disappear.</p>
+<p>Click on the "Show" button and I will reappear.</p>
+ 
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+ 
+</body>  
+</html>
